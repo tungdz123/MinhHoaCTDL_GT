@@ -14,13 +14,13 @@ public class Lap3Bai5TestDrive {
             System.out.println("Nhập sinh viên thứ " + (i+1));
             System.out.print("Tên sinh viên: ");
             String ten = scanner.nextLine();
+            System.out.print("Quê quán: ");
+            String queQuan = scanner.nextLine();
             System.out.print("Mã số sinh viên: ");
             int mssv = scanner.nextInt();
             System.out.print("Tuổi: ");
-            int tuoi = scanner.nextInt();
-            System.out.print("Quê quán: ");
-            String queQuan = scanner.nextLine();
-            scanner.nextLine();
+            int tuoi = scanner.nextInt();   
+            scanner.nextLine();   
             dsSinhVien[i] = new Lap3Bai5(ten, mssv, tuoi, queQuan);
         }
 
