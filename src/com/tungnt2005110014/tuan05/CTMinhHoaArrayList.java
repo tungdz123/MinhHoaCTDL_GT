@@ -20,6 +20,6 @@ public class CTMinhHoaArrayList {
         //listStrings.add(1);
         lisStrings.add("Mr. Tèo");
 
-        ArrayList
+      
     }
 }
