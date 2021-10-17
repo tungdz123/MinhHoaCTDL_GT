@@ -19,7 +19,7 @@ public class Lap5Bai3 {
             scanner.nextLine();
             System.out.print("Nhập thêm (y/n)?: ");
             if(scanner.nextLine().equals("n"))
-                break;
+                break;            
         }
     }
     static void xuat(){
