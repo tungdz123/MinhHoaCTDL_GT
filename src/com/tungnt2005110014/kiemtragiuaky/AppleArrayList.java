@@ -41,6 +41,7 @@ public class AppleArrayList {
         }
     }
 
+    //TẠO MENU CHO DỄ SỬ DỤNG
     static void menu(){
         System.out.println("|--------------------MENU--------------------|");
         System.out.println("|>>1. Thêm táo.                              |");
@@ -64,6 +65,8 @@ public class AppleArrayList {
                 System.out.println("Chọn sai!!!");
         }
     }
+
+    //HÀM MAIN
     public static void main(String[] args) {
         do {
             menu();
