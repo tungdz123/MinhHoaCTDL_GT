@@ -10,7 +10,7 @@ public class QuanLyHangHoa {
     KhoHang khoHang;
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy");
     int n = 30;
-    
+
     public QuanLyHangHoa(){}
     boolean isEmpty(){
         boolean empty = true;
@@ -25,7 +25,7 @@ public class QuanLyHangHoa {
     // Hàm mồi
     void add(String loai, int id, String tenHangHoa, double giaNhap, int soLuongTonKho,String ngay){
         Date ngayNhapKho;
-        
+
         try {
             ngayNhapKho = simpleDateFormat.parse(ngay);
 
@@ -72,7 +72,7 @@ public class QuanLyHangHoa {
 
     Node search(int idCanTim) {
         Node node = null;
-         
+
         if (isEmpty() == true) {
             System.out.println("Danh sach rong.");
         } else {
@@ -85,7 +85,7 @@ public class QuanLyHangHoa {
                 }
                 current = current.next;
             }
-            
+
         }
         return null;
     }
@@ -93,7 +93,7 @@ public class QuanLyHangHoa {
     //Hàm thêm sau mã hàng hóa
     void themSauMa() {
         KhoHang khoHang = new KhoHang();
-        
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhap ma hang hoa can them sau: ");
@@ -121,7 +121,7 @@ public class QuanLyHangHoa {
     // Hàm thêm trước id hàng hóa
     void themTruocMa() {
         KhoHang khoHang = new KhoHang();
-        
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhap ma hang hoa can them truoc: ");
@@ -241,7 +241,7 @@ public class QuanLyHangHoa {
     // Hàm sửa thông tin theo id hàng hóa
     void sua() {
         KhoHang khoHang = new KhoHang();
-        
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhap ma hang hoa can sua thong tin: ");
@@ -263,7 +263,7 @@ public class QuanLyHangHoa {
             }
             current = current.next;
         }
-        
+
     }
 
     // Hàm tìm theo loại hàng hóa
@@ -272,7 +272,7 @@ public class QuanLyHangHoa {
         System.out.print("Nhap loai hang hoa can tim: ");
         String loaiCanTim = scanner.nextLine();
         Node current = head;
-        
+
         while(current != null){
             if(current.data.loai.equals(loaiCanTim)){
                 current.data.inThongTin();               
@@ -306,7 +306,7 @@ public class QuanLyHangHoa {
         double giaLon = scanner.nextDouble();
 
         Node current = head;
-        
+
         while(current != null){
             if(giaNho <= current.data.giaNhap && current.data.giaNhap <= giaLon){                
                 current.data.inThongTin();
@@ -511,7 +511,7 @@ public class QuanLyHangHoa {
         String loai1 = "Thoi trang";
         String loai2 = "Phuong tien";
         String loai3 = "Do gia dung";
-        
+
         if (head == null) {
             System.out.println("Danh sach rong.");
         } else {
@@ -538,7 +538,7 @@ public class QuanLyHangHoa {
         System.out.println("Tong so luong do gia dung: " + tong5);           
     }
 
-    
+
     void print(){
         Node current;
         current = head;
@@ -631,12 +631,8 @@ public class QuanLyHangHoa {
                                     break;
                                 case 6:
                                     print();
-                                default:  
-                                    System.out.println("Sai cu phap! Vui long thu lai.");  
-                                    break;                
-                                
                             }
-                            
+
                         } while (key != 0);
 
                         break;
@@ -656,7 +652,7 @@ public class QuanLyHangHoa {
                             System.out.println("|   >> 4: In danh sach hang hoa sau khi xoa.    |");
                             System.out.println("|   >> 0: Thoat.                                |");
                             System.out.println("+-----------------------------------------------+");
-                            
+
                             System.out.print("Nhap vao su lua chon: ");
                             key = scanner.nextInt();
                             switch (key) {
@@ -673,12 +669,9 @@ public class QuanLyHangHoa {
                                     n--;
                                     break;
                                 case 4:
-                                    print();
-                                default:
-                                    System.out.println("Sai cu phap! Vui long thu lai.");
-                                    break;                    
+                                    print();                   
                             }
-                        
+
                         } while (key != 0);
 
                         break;
@@ -717,12 +710,9 @@ public class QuanLyHangHoa {
 
                                 case 3:
                                     timTheoGiaKhoang();
-                                    break;
-                                default:
-                                    System.out.println("Sai cu phap! Vui long thu lai.");
-                                    break;                    
+                                    break;                   
                             }
-                        
+
                         } while (key !=0 );
                         break;
 
@@ -742,10 +732,10 @@ public class QuanLyHangHoa {
                             System.out.println("+   >> 4: Sap xep hang hoa theo ngay nhap kho cu nhat.        +");
                             System.out.println("+   >> 0: Thoat.                                              +");
                             System.out.println("+-------------------------------------------------------------+");
-                        
+
                             System.out.print("Nhap vao su lua chon: ");
                             key = scanner.nextInt();
-                            
+
                             switch (key) {
                                 case 1:
                                     bubbleSortTheoGiaTangDan();
@@ -762,13 +752,10 @@ public class QuanLyHangHoa {
                                 case 4:
                                     bubbleSortTheoNgayGiamDan();
                                     print();
-                                    break;
-                                default:
-                                    System.out.println("Sai cu phap! Vui long thu lai.");
-                                    break;   
-                                                
+                                    break; 
+
                             }
-                        
+
                         } while (key != 0);
                         break;
 
@@ -778,9 +765,6 @@ public class QuanLyHangHoa {
 
                     case 7:
                         print();
-                        break;
-                    default:
-                        System.out.println("Sai cu phap! Vui long thu lai.");
                         break;
                 }
 
