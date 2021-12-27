@@ -597,7 +597,7 @@ public class QuanLyHangHoa {
                             System.out.println("|   >> 2: Them hang hoa vao cuoi danh sach.                             |");
                             System.out.println("|   >> 3: Them hang hoa vao truoc ma hang hoa co trong danh sach.       |");
                             System.out.println("|   >> 4: Them hang hoa vao sau ma hang hoa co trong danh sach.         |");
-                            System.out.println("|   >> 5: Them hang hoa vao vi tri bat ky.                                     |");
+                            System.out.println("|   >> 5: Them hang hoa vao vi tri bat ky.                              |");
                             System.out.println("|   >> 6: In danh sach hang hoa sau khi them.                           |");
                             System.out.println("|   >> 0: Thoat.                                                        |");
                             System.out.println("+-----------------------------------------------------------------------+");
