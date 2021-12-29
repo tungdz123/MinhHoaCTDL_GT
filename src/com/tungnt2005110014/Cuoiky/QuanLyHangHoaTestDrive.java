@@ -4,32 +4,29 @@ public class QuanLyHangHoaTestDrive {
     public static void main(String[] args) {
         QuanLyHangHoa testDrive = new QuanLyHangHoa();
         
-        //Thời trang
-        testDrive.add("Thoi trang", 111, "Jean", 250, 100, "01/01/2021");
-        testDrive.add("Thoi trang", 112, "Somi", 150, 100, "02/01/2021");
-        testDrive.add("Thoi trang", 113, "Polo", 150, 100, "03/01/2021");
-        testDrive.add("Thoi trang", 114, "Quan au", 200, 100, "04/01/2021");
-        testDrive.add("Thoi trang", 115, "Short", 100, 100, "05/01/2021");
-        testDrive.add("Thoi trang", 116, "Hoodie", 350, 100, "06/01/2021");
-        testDrive.add("Thoi trang", 117, "T-Shirt", 150, 100, "07/01/2021");
-        testDrive.add("Thoi trang", 118, "Jacket", 300, 100, "08/01/2021");
-        //Phương tiện
-        testDrive.add("Phuong tien", 221, "Sirius 50cc", 15000, 10, "01/06/2021");
-        testDrive.add("Phuong tien", 222, "Sirius 100cc", 25000, 10, "02/06/2021");
-        testDrive.add("Phuong tien", 223, "Wave 50cc", 15000, 10, "03/06/2021");
-        testDrive.add("Phuong tien", 224, "Wave 125cc", 30000, 10, "04/06/2021");
-        testDrive.add("Phuong tien", 225, "Sh 125cc", 100000, 10, "05/06/2021");
-        testDrive.add("Phuong tien", 226, "Sh mode", 65000, 10, "06/06/2021");
-        testDrive.add("Phuong tien", 227, "Vision", 35000, 10, "07/06/2021");
-        testDrive.add("Phuong tien", 228, "Air Blade 150cc", 51000, 10, "08/06/2021");
-        //Đồ gia dụng 
-        testDrive.add("Do gia dung", 331, "Chen", 20, 80, "01/12/2021");
-        testDrive.add("Do gia dung", 332, "Ly", 10, 80, "02/12/2021");
-        testDrive.add("Do gia dung", 333, "To", 15, 80, "03/12/2021");
-        testDrive.add("Do gia dung", 334, "Dua", 5, 80, "04/12/2021");
-        testDrive.add("Do gia dung", 335, "Muong", 2, 80, "05/12/2021");
-        testDrive.add("Do gia dung", 336, "Thot", 100, 80, "06/12/2021");
-        testDrive.add("Do gia dung", 337, "May xay", 750, 80, "07/12/2021");
+        //Thực phẩm
+        testDrive.add("Thuc pham", 111, "Banh mi", 250, 100, "01/01/2021");
+        testDrive.add("Thuc pham", 112, "My ly", 150, 100, "02/01/2021");
+        testDrive.add("Thuc pham", 113, "Bia 333", 150, 100, "03/01/2021");
+        testDrive.add("Thuc pham", 114, "Ruou", 200, 100, "04/01/2021");
+        testDrive.add("Thuc pham", 115, "Dua hau", 100, 100, "05/01/2021");
+        testDrive.add("Thuc pham", 116, "Gao", 350, 100, "06/01/2021");
+        testDrive.add("Thuc pham", 117, "Nep", 150, 100, "07/01/2021");
+        testDrive.add("Thuc pham", 118, "Mi goi", 300, 100, "08/01/2021");
+        //Sành sứ
+        testDrive.add("Sanh su", 221, "Ly", 15000, 10, "01/06/2021");
+        testDrive.add("Sanh su", 222, "Am tra", 25000, 10, "02/06/2021");
+        testDrive.add("Sanh su", 223, "Dia", 15000, 10, "03/06/2021");
+        testDrive.add("Sanh su", 224, "Binh hoa", 30000, 10, "04/06/2021");
+        testDrive.add("Sanh su", 225, "Den tran", 100000, 10, "05/06/2021");
+        //Điện máy
+        testDrive.add("Dien may", 331, "Tivi", 20, 80, "01/12/2021");
+        testDrive.add("Dien may", 332, "Tu lanh", 10, 80, "02/12/2021");
+        testDrive.add("Dien may", 333, "May giat", 15, 80, "03/12/2021");
+        testDrive.add("Dien may", 334, "Dieu hoa", 5, 80, "04/12/2021");
+        testDrive.add("Dien may", 335, "Quat", 2, 80, "05/12/2021");
+        testDrive.add("Dien may", 336, "May rua chen", 100, 80, "06/12/2021");
+        testDrive.add("Dien may", 337, "Loa keo", 750, 80, "07/12/2021");
         
         testDrive.menu();
     }

@@ -508,9 +508,9 @@ public class QuanLyHangHoa {
         int tong1 = 0;
         double tong2 = 0;
         int tong3 = 0, tong4 = 0, tong5 = 0;
-        String loai1 = "Thoi trang";
-        String loai2 = "Phuong tien";
-        String loai3 = "Do gia dung";
+        String loai1 = "Thuc pham";
+        String loai2 = "Sanh su";
+        String loai3 = "Dien may";
 
         if (head == null) {
             System.out.println("Danh sach rong.");
@@ -533,9 +533,9 @@ public class QuanLyHangHoa {
         System.out.println("---------- THONG KE ----------");
         System.out.println("Tong so luong hang hoa: " + tong1);
         System.out.println("Tong gia tri hang hoa nhap kho: " + tong2); 
-        System.out.println("Tong so luong thoi trang: " + tong3);
-        System.out.println("Tong so luong phuong tien: " + tong4);
-        System.out.println("Tong so luong do gia dung: " + tong5);           
+        System.out.println("Tong so luong thuc pham: " + tong3);
+        System.out.println("Tong so luong sanh su: " + tong4);
+        System.out.println("Tong so luong dien may: " + tong5);           
     }
 
 
